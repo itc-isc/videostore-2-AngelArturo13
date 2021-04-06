@@ -1,4 +1,4 @@
-
+package wsVideoStore;
 import java.util.Vector;
 import java.util.Enumeration;
 
@@ -28,15 +28,15 @@ public class Customer
 			
 			// determines the amount for each line
 			switch (each.getMovie ().getPriceCode ()) {
-				case Movie.REGULAR:
+				case 1:
 					thisAmount += 2;
 					if (each.getDaysRented () > 2)
 						thisAmount += (each.getDaysRented () - 2) * 1.5;
 					break;
-				case Movie.NEW_RELEASE:
+				case 2:
 					thisAmount += each.getDaysRented () * 3;
 					break;
-				case Movie.CHILDRENS:
+				case 3:
 					thisAmount += 1.5;
 					if (each.getDaysRented () > 3)
 						thisAmount += (each.getDaysRented () - 3) * 1.5;
@@ -45,7 +45,7 @@ public class Customer
 			
 			frequentRenterPoints++;
 			
-			if (each.getMovie ().getPriceCode () == Movie.NEW_RELEASE 
+			if (each.getMovie ().getPriceCode () == 2 
 					&& each.getDaysRented () > 1)
 				frequentRenterPoints++;
 				

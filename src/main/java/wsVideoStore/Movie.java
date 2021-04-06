@@ -1,8 +1,11 @@
+package wsVideoStore;
+
 
 
 public abstract class Movie
 {
-	private String title;
+
+    private String title;
 
 	public Movie(String title) {
 		this.title 		= title;
@@ -15,4 +18,8 @@ public abstract class Movie
   public abstract double determineAmount(int daysRented);
 
   public abstract int determineFrequentRenterPoints(int daysRented);
+
+public int getPriceCode() {
+    return 0;
+}
 }

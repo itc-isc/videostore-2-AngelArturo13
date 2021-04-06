@@ -1,4 +1,4 @@
-# **NOMBRE:**_____________________________________
+# **NOMBRE:** Angel Arturo Prado Isiordia
 
 # **Ejercicio-Comprensión de Programas**
 **VideoStore** es una App Java desarrollada para gestionar el Punto de Venta de una tienda de renta de Videos.
